@@ -1,0 +1,9 @@
+<script>
+var people = parseInt(prompt("How many people?"));
+var pizzas = parseInt(prompt("How many pizzas do you have?"));
+var slices = parseInt(prompt("How many slicers per pizza?"));
+slice = people/pizzas;
+leftover = people%pizzas;
+var message = people + " people with " + pizzas + "pizzas.\n Each person gets " + slice + " pieces of pizza.\n There are " + leftover + " slices.";
+alert(message); 
+</script>
