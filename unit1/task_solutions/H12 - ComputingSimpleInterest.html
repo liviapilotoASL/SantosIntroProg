@@ -1,10 +1,13 @@
 <script>
-var principal = parseInt(prompt("Enter the principal(£): "));
+//Get input from the user
+var principal = parseInt(prompt("Enter the principal (\u00A3): "));
 var rate = parseInt(prompt("Enter the rate of interest (as a percent): "));
 var years = parseInt(prompt("Enter the number of years: "));
 
+//calculate the interest amount
 var amount = principal*(1 + (rate*years));
 
-var message = "After " + years + " years at " + rate + "%, the investment will be worth £" + amount + ".";
+//display the amount for the user
+var message = "After " + years + " years at " + rate + "%, the investment will be worth \u00A3" + amount + ".";
 alert(message);
 </script>
