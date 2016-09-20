@@ -1,0 +1,17 @@
+<script>
+var principal = parseInt(prompt("Enter the principal:"));
+var rate = parseInt(prompt("Enter the rate of interest:"));
+var years = parseInt(prompt("Enter the number of years:"));
+var compound = parseInt(prompt("Enter the number of times the interest is compounded per year:"));
+
+var rateDecimal = rate/100;
+
+var totalAmount = principal * Math.pow(1 + rateDecimal/compound, compound * years);
+
+var roundedTotal = Math.ceil(totalAmount*100)/100;
+roundedTotal = totalAmount.toFixed(2);
+
+var out = "After " + years + "years at " + rate + "% compounded " + compound + " times per year, the investment will\nbe worth \u00A3" + roundedTotal + ".";
+
+alert(out);
+</script>
