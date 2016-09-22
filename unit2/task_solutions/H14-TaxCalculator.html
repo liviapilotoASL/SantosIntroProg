@@ -1,13 +1,14 @@
 <script>
-/* This program finds the tax on an order using VAT if the order was from
- * Spain. Otherwise, no tax is calculated.
- */
+/* 
+This program finds the tax on an order using VAT if the order was from
+Spain. Otherwise, no tax is calculated. 
+*/
 
- var VAT_SPAIN = 0.21;
+var VAT_SPAIN = 0.21;
 
 // Get input strings from user
- var amountString = prompt("What is the order amount (\u20AC):");
- var country = prompt("What is the country:");
+var amountString = prompt("What is the order amount (\u20AC):");
+var country = prompt("What is the country:");
 
 // Convert amount to number
 var amount = parseFloat(amountString);
