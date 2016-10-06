@@ -8,20 +8,20 @@
 var UK_DRIVER_AGE = 17;
 
 // Get the user input
-var userAgeString = parseInt(prompt("What is your age?"));
+var userAge = parseInt(prompt("What is your age?"));
 
 // Set up the empty output string
 var output = "";
 
 // Test to see if age is old enough and set output appropriately
 if (userAge >= UK_DRIVER_AGE) {
-	output = "You are old enough to drive legally."
+	output = "You are old enough";
 }
 else {
-	output = "You are not old enough to drive legally."
+	output = "You are not old enough";
 }
 
 // Display output
-alert(output);
+alert(output + " to drive legally.");
 
 </script>
