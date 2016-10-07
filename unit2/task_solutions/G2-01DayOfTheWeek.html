@@ -1,0 +1,28 @@
+<script>
+//Get the week day number
+var weekDay = parseInt(prompt("Enter a number 1 through 7"));
+//declare a message variable
+var message;
+
+//check the number and the message should display the day
+if (weekDay == 1) {
+	message = "Monday";
+} else if (weekDay == 2) {
+	message = "Tuesday";
+} else if (weekDay == 3) {
+	message = "Wedensday";
+} else if (weekDay == 4) {
+	message = "Thursday";
+} else if (weekDay == 5) {
+	message = "Friday";
+} else if (weekDay == 6) {
+	message = "Saturday";
+} else if (weekDay == 7) {
+	message = "Sunday";
+} else {
+	message = "Invalid"; //checks if entered an invalid number
+}
+
+//display the day
+alert(message);
+</script>
