@@ -1,14 +1,17 @@
 <script>
+//get the values of the rectangles from the user
 var widthA = parseInt(prompt("Enter the width of rectangle A"));
 var heightA = parseInt(prompt("Enter the height of rectangle A"));
 var widthB = parseInt(prompt("Enter the width of rectangle B"));
 var heightB = parseInt(prompt("Enter the height of rectangle B"));
 
+//calculate the area
 var areaA = widthA*heightA;
 var areaB = widthB*heightB;
 
-var message;
+var message; //declare message variable
 
+//check which rectangle is larger or equal
 if (areaA > areaB) {
 	message = "Rectangle A has the larger area of " + areaA + " square units";
 } else if (areaB > areaA) {
@@ -17,5 +20,6 @@ if (areaA > areaB) {
 	message = "The rectangles have the same area of " + areaA + " square units";
 }
 
+//display the message
 alert(message);
 </script>
