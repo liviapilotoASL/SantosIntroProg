@@ -1,0 +1,16 @@
+<script>
+var ans = prompt("Hello, welcome to the US Government Senator Qualification Questionnaire, or the \"GSQQ\".Please answer the following questions truthfully. \n\n How old are you?");
+
+if (ans >= 30) {
+	ans = prompt("You're old enough to be a US Senator. \n\n Are you a US citizen? (Type 1 for yes and 2 for no)");
+	if (ans == 1 ) {
+		alert("Congratulations! You can run to be a US Senator!");
+	} else if (ans == 2) {
+		alert("Sorry, even though you are old enough, since you are not a US Citizen, you cannot run to be a US Senator.");
+	} else {
+		alert("Please type in only 1 or 2 to answer if you are a US citizen");
+	}
+} else {
+	alert("Sorry, you're not old enough to be a US Senator.");
+}
+</script>

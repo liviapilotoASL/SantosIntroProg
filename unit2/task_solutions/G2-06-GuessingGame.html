@@ -1,0 +1,18 @@
+<script>
+var MIN = parseInt(prompt("Enter the minimum number:"));
+var MAX = parseInt(prompt("Enter the maximum number:"));
+var rand = Math.floor((MAX - MIN + 1) * Math.random()) + MIN;
+
+var guess = parseInt(prompt("Enter your guess: "));
+
+var message = "You guessed " + guess;
+if (rand > guess) {
+	message += "\n Too low.\nThe number was " + rand + ".";
+} else if (rand < guess) {
+	message += "\n Too high.\nThe number was " + rand + ".";
+} else {
+	message += "\nYou got it! Good guess."
+}
+
+alert(message);
+</script>
