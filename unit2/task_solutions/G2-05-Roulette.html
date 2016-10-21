@@ -1,17 +1,16 @@
 <script>
-var num1 = parseInt(prompt("Enter the first number to bet on:"));
-var num2 = parseInt(prompt("Enter the second number to bet on:"));
-var bet = parseInt(prompt("Enter your bet in pounds:"));
+	var num1 = parseInt(prompt("Enter the first number to bet on:"));
+	var num2 = parseInt(prompt("Enter the second number to bet on:"));
+	var bet = parseInt(prompt("Enter your bet in pounds:"));
 
-var MAX = 36;
-var MIN = 1;
-var rand = Math.floor((MAX - MIN + 1) * Math.random()) + MIN;
+	var MAX = 36;
+	var MIN = 1;
+	var rand = Math.floor((MAX - MIN + 1) * Math.random()) + MIN;
 
-if (rand == num1 || rand == num2) {
-	bet = 35 * bet;
-	alert("The winning number was " + rand + "\n\n You won! Congratulations. Please collect " + bet + " pounds");
-} else {
-	alert("The winning number was " + rand + "\n Sorry, the house wins and that means you lose.\n You lost " + bet + " pounds");
-}
-
+	if (rand == num1 || rand == num2) {
+		bet = 35 * bet;
+		alert("The winning number was " + rand + "\n\n You won! Congratulations. Please collect " + bet + " pounds");
+	} else {
+		alert("The winning number was " + rand + "\n Sorry, the house wins and that means you lose.\n You lost " + bet + " pounds");
+	}
 </script>
