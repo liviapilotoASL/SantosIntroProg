@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+	<title>Adding Numbers</title>
+</head>
+
+<body>
+	<script>var num;
+		var total = 0;
+
+		for (var i = 1; i <= 5; i++) {
+			num = parseInt(prompt("Please enter number " + i));
+			total = total + num;
+		}
+
+		var message = "The sum of all numbers are: " + total;
+		var para = document.createElement("p");
+		var text = document.createTextNode(message);
+		para.appendChild(text);
+		document.body.appendChild(para);
+	</script>
+</body>
+</html></script>
