@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<title>Adding Numbers</title>
+</head>
+
+<body>
+	<script>var num;
+		var total = 0;
+		var stop = "Y";
+
+		while (stop == "Y") {
+			num = parseInt(prompt("Please enter number "));
+			total = total + num;
+			stop = prompt("Do you want to enter another number?");
+			stop = stop.toUpperCase();
+		}
+
+		var message = "The sum of all numbers are: " + total;
+		var para = document.createElement("p");
+		var text = document.createTextNode(message);
+		para.appendChild(text);
+		document.body.appendChild(para);
+	</script>
+</body>
+</html></script>

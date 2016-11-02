@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 29 - Handling Bad Input</title>
+</head>
+<body>
+	<script>
+		var rate = parseInt(prompt("What is the rate of return?"));
+		
+		while (rate == 0 || isNaN(rate)) {
+			alert("Sorry that is not a valid input.")
+			rate = parseInt(prompt("What is the rate of return?"));
+		}
+
+		var years = 72/rate;
+		var message = "It will take approximately " + years + " years to double your investment.";
+		var para = document.createElement("p");
+		var text = document.createTextNode(message);
+		para.appendChild(text);
+		document.body.appendChild(para);
+	</script>
+</body>
+</html>
