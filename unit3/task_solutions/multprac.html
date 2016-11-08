@@ -1,0 +1,21 @@
+<script>
+var MIN = 1;
+var MAX = 12;
+var count = 0;
+
+var num1 = Math.floor((MAX-MIN+1) * Math.random()) + MIN;
+var num2 = Math.floor((MAX-MIN+1) * Math.random()) + MIN;
+
+var userAns = prompt(num1 + " x " + num2);
+var ans = num1*num2;
+if (userAns == ans) {
+	count++;
+	alert("Correct.\n Your score is " + count);
+} else if (parseInt(userAns) == "q"){
+	alert("you have quit");
+} else {
+	alert()
+}
+
+
+</script>

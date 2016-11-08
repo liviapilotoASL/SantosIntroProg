@@ -1,0 +1,29 @@
+MultiplicationPractice.html
+
+<script>
+
+	alert("Let's get multiplying! (Type Q to quit)");
+	var count = 1; 
+
+	while (answer != "Q") {
+		var MAX = 12;
+		var MIN = 1;
+		var number1 = Math.floor((MAX - MIN + 1) * Math.random()) + MIN; 
+		var number2 = Math.floor((MAX - MIN + 1) * Math.random()) + MIN; 	
+
+		var product = (number1 * number2) ; 
+
+		var answer = prompt(number1 + " x " + number2 + "\nAnswer:");
+
+		if (answer == "Q") {
+			alert("Thank you for playing. Goodbye!") ;
+		} else if (answer == product) {
+			alert("Correct! You have gotten " + count + " correct!") ;
+			count++;
+		} else {
+			alert("Please try again.") ; 
+		}
+	} 
+
+
+</script>

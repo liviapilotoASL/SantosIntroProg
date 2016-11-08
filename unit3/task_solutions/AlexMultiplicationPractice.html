@@ -1,0 +1,44 @@
+<script>
+
+	//Welcome user
+
+	alert("Let's get multiplying! (Type Q to quit)");
+
+	//Out of loop variables
+	
+	var score = 0;
+	var again = "nothing";
+
+	//Loop
+
+	while (again != "q") {
+
+		//Set MAX and MIN
+
+		var MIN = 1;
+		var MAX = 12;
+
+		//Set randoms and answer
+
+		var randomNum1 = Math.floor((MAX - MIN + 1) * Math.random()) + MIN;
+		var randomNum2 = Math.floor((MAX - MIN + 1) * Math.random()) + MIN;
+		var correctAnswer = randomNum1 * randomNum2;
+		var answer = prompt("What is the product of " + randomNum1 + " * " + randomNum2);
+
+		//If/Else
+
+		if (answer == correctAnswer) {
+			score = score + 1;
+			alert("Correct! \nYour score is " + score);
+		} else {
+			alert("Sorry, the correct answer was " + randomNum1 * randomNum2 + ".");
+			score = 0;
+		}
+
+		again.toLowerCase();
+		var again = prompt("Would you like to play again? (q = quit)");
+	}
+
+	alert("Your final score is " + score);
+
+</script>
