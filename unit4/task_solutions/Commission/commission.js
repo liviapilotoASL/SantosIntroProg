@@ -18,12 +18,13 @@ for (var i=0; i<3; i++) {
 var message1 = "Total sales: " + salesTotal.toFixed(2);
 var message2 = "Total commission: " + commTotal.toFixed(2);
 
-var para = document.createElement("p");
-var text = document.createTextNode(message1);
-para.appendChild(text);
-document.body.appendChild(para);
+display();
+display();
+display();
 
-para = document.createElement("p");
-text = document.createTextNode(message2);
-para.appendChild(text);
-document.body.appendChild(para);
+function display() {
+	var para = document.createElement("p");
+	var text = document.createTextNode(message1);
+	para.appendChild(text);
+	document.body.appendChild(para);
+}

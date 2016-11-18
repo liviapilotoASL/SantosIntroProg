@@ -15,12 +15,15 @@
 
 	 // Declare and initialize the total.
 	 var total = 0;
+	 adding();
 
-	 for (var i=0; i<NUM_PROMPTS; i++) {
-	 	var numString = prompt("Enter a number:");
-	 	var num = parseInt(numString);
-	 	total += num;
-	 }
+	 function adding(){
+	 	for (var i=0; i<NUM_PROMPTS; i++) {
+	 		var numString = prompt("Enter a number:");
+	 		var num = parseInt(numString);
+	 		total += num;
+	 	}
+	}
 
 	alert("The total is " + total + ".");
 
